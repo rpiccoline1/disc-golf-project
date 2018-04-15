@@ -23,13 +23,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mramsey1992/charlotte_discgolf.git"
+    "url": "git+https://github.com/rpiccoline1/disc-golf-project.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mramsey1992/charlotte_discgolf/issues"
+    "url": "https://github.com/rpiccoline1/disc-golf-project/issues"
   },
   "homepage": "https://github.com/mramsey1992/charlotte_discgolf#readme"
 }
