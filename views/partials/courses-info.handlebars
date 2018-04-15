@@ -1,0 +1,40 @@
+
+{{!-- Displays course information --}}
+<div class="container">
+    <div class="row information-background course-main">
+        <div class="col-md-12">
+            <div class="row text-center">
+                  <div class="col-md-4">
+                        <h2>Hole Number</h2>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Par</h2>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Distance</h2>
+                    </div>
+            </div>
+                {{#each infoList}}
+                    <div class="row row-border">
+                        <div class="col-md-4">
+                            <ul class="text-center hole-info">
+                                <li>{{this.hole_number}}.</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4">
+                            <ul class="text-center hole-info">
+                                <li>{{this.par}}</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4">
+                            <ul class="text-center hole-info">
+                                <li>{{this.distance}} .ft</li>
+                            </ul>
+                        </div>
+                    </div>
+                {{/each}}
+        </div>
+    </div>
+</div>

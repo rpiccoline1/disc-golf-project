@@ -1,0 +1,50 @@
+
+   <div class="container">
+      <h1 class="display-4 text-center course-header">Play a Round</h1>
+      
+      <h2 class="text-center course-header">Welcome, <span id="user" data-id={{users.user.id}}>{{users.user.username}}</span></h2>
+      
+   </div>
+   <div class="container course-main">
+      <div class="row">
+         <div class="col-md-12 text-center">                
+            <hr>
+            <select class='courseSelect'>
+                <option value="0">Select Course</option>
+                {{#each courseInfo}}
+                <option value={{id}} >{{name}}</option>
+                {{/each}}
+            </select>
+            <button class="btn btn-success" type="button" id="viewHoles">Play Round</button>
+            
+            <hr>
+            <h3>Total Par: <span id="totalPar"></span></h3>
+            <h3>Total Distance: <span id="totalDistance"></span></h3>
+            
+            <hr>
+         </div>
+      </div>
+      
+      <div class="row">
+          <div class="col-md-3 text-center" >
+              <h4>Hole Number</h4>
+              <div id="holeNumber"></div>
+          </div>
+          <div class="col-md-3 text-center" >
+              <h4>Par</h4>
+              <div id="par"></div>
+          </div>
+          <div class="col-md-3 text-center" >
+              <h4>Distance</h4>
+              <div id="distance"></div>
+          </div>
+          <div class="col-md-3 text-center" >
+              <h4>Tosses</h4>
+              <form><div id="tosses"></div></form>
+              {{!-- <button class="btn btn-success" type="submit" id="endRound" style:"text-align:center">End Game</button> --}}
+              
+              
+          </div>
+      </div>
+               
+   </div>

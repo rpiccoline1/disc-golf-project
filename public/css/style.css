@@ -1,0 +1,488 @@
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Carter+One');
+
+/* Main styles */
+
+ul {
+    margin-bottom: 8px;
+    list-style-type: none;
+}
+
+p {
+    margin-bottom: 8px;
+}
+
+footer {
+    border-top: 1px solid #000;
+}
+
+footer a,
+nav a {
+    color: #000;
+}
+
+nav a:hover,
+footer a:hover {
+    color: #ff0000;
+}
+
+/* Base styles */
+
+.jumbotron {
+    height: 270px;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner > img {
+    height: 270px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #000;
+    top: 95px;
+    left: 0px;
+    position: absolute;
+    color: transparent;
+    opacity: 0;
+    z-index: 0;
+    backface-visibility: hidden;
+    animation: imageAnimation 30s linear infinite 0s;
+}
+
+#banner > img:nth-child(2)  {
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s; 
+}
+#banner > img:nth-child(3) {
+    -webkit-animation-delay: 12s;
+    -moz-animation-delay: 12s;
+    -o-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    animation-delay: 12s; 
+}
+#banner > img:nth-child(4) {
+    -webkit-animation-delay: 18s;
+    -moz-animation-delay: 18s;
+    -o-animation-delay: 18s;
+    -ms-animation-delay: 18s;
+    animation-delay: 18s; 
+}
+#banner > img:nth-child(5) {
+    -webkit-animation-delay: 24s;
+    -moz-animation-delay: 24s;
+    -o-animation-delay: 24s;
+    -ms-animation-delay: 24s;
+    animation-delay: 24s; 
+}
+
+@-webkit-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -webkit-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -webkit-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@-moz-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -moz-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -moz-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@-o-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -o-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -o-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@-ms-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -ms-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -ms-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@keyframes imageAnimation { 
+    0% { opacity: 0;
+    animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+.display-4 {
+    padding-top: 300px;
+    color: #000;
+    font-size: 4.8em;
+    font-family: 'Carter One', cursive;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 250px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    margin: 20px 0 40px 0;
+    border: 2px solid #fff;
+  }
+
+.center {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.text {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.row-border {
+    border-bottom: 1px solid #000;
+}
+
+.img {
+    height: 150px;
+}
+
+.wrap:hover .image {
+    opacity: 0.3;
+  }
+  
+.wrap:hover .center{
+    opacity: 1;
+}
+
+.btn a {
+    color: #fff;
+}
+
+.btn-primary {
+    border-color: none;
+}
+
+.btn-github,
+.btn-google {
+    width: 190px;
+}
+
+.btn-primary,
+.btn-primary:hover {
+  background-color: #000;
+  border-color: #fff;
+  border-radius: 0%;
+}
+
+.main-body {
+    height: 300px;
+}
+
+.form-control {
+    border-radius: 0%;
+    border-color: #000;
+}
+
+.navbar {
+    padding-bottom: 1px;
+    background-color: #d3d3d3;
+    border-bottom: 1px solid #000;
+    
+}
+
+.content-nav {
+    padding-left: 5px;
+}
+
+.lowerContent {
+    padding-bottom: 15px;
+}
+
+.informationArea {
+    padding-top: 10px;
+}
+
+.courses-login {
+    padding-right: 20px;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+.course-header {
+    padding-top: 20px;
+}
+
+.course-main {
+    min-height: 475px;
+    margin-bottom: 100px;
+    clear: both;
+}
+
+.font-color {
+    color: #d3d3d3;
+}
+
+.destination {
+    cursor: pointer;
+}
+
+.background-img {
+    height: 475px;
+}
+
+.btn-light {
+    border-radius: 0%;
+}
+
+.github {
+    padding-top: 55px;
+}
+
+.github-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.contact {
+    padding-right: 36px;
+}
+
+.column-title {
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.holes {
+    padding-left: 40px;
+}
+
+.course-list {
+    padding-left: 5px;
+}
+
+.text-space {
+    padding-right: 5px;
+}
+
+.information-background {
+    margin-bottom: 10px;
+}
+
+.button-div {
+    padding-top: 250px;
+}
+
+/* -------------------------  ID's  ------------------------------- */
+
+#home-background {
+    background: linear-gradient(90deg,rgba(175, 72, 72, 0.4),rgba(182, 91, 69, 0.4)),
+    url("/images/signin-bg.jpg") #fff no-repeat;
+}
+
+#courses-bg {
+    background: linear-gradient(90deg,rgba(175, 72, 72, 0.4),rgba(182, 91, 69, 0.4)),
+    url("/images/courses-background.jpg") #fff no-repeat;
+}
+
+#user_round {
+    background:
+    url("/images/user-round.jpg") #fff no-repeat;
+}
+
+#course-row {
+    padding-top: 75px;
+    margin-left: 20px;
+}
+
+#font-rating {
+    color: #000;
+    /* margin-right: 5px; */
+}
+
+#par {
+    padding-left: 40px;
+}
+
+#distance {
+    padding-left: 30px;
+}
+
+#sign-in-page {
+    height: 600px; 
+}
+
+#sign-in-header {
+    width: 100%;
+    font-weight: 400;
+}
+
+#sign-in-text {
+    color: #fff;
+    font-weight: 300;
+}
+
+#gitlink {
+    text-decoration: none;
+}
+
+#list-item {
+    margin: 20px 75px 24px 0px;
+    text-align: center;
+}
+
+#list-tosses-item {
+    margin: 10px 0px 10px 18px;
+}
+
+/* REGISTRATION CSS */
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.reg-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.reg-button:hover {
+    opacity: 1;
+}
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+.cancelbtn,
+.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+.reg-container {
+    padding: 16px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width: 300px) {
+    .cancelbtn,
+    .signupbtn {
+        width: 100%;
+    }
+}
+
+/* Google button */
+
+/* Shared */
+.loginBtn {
+    box-sizing: border-box;
+    position: relative;
+    /* width: 13em;  - apply for fixed size */
+    margin: 0.2em;
+    padding: 0 15px 0 46px;
+    border: none;
+    text-align: left;
+    line-height: 34px;
+    white-space: nowrap;
+    border-radius: 0.2em;
+    font-size: 16px;
+  }
+
+  .loginBtn a {
+    color: #FFF;
+  }
+
+  .loginBtn a:hover {
+    text-decoration: none;
+  }
+
+  .loginBtn:before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 34px;
+    height: 100%;
+  }
+  .loginBtn:focus {
+    outline: none;
+  }
+  .loginBtn:active {
+    box-shadow: inset 0 0 0 32px rgba(0,0,0,0.1);
+  }
+  
+  /* Google */
+  .loginBtn--google {
+    /*font-family: "Roboto", Roboto, arial, sans-serif;*/
+    background: #DD4B39;
+  }
+  .loginBtn--google:before {
+    border-right: #BB3F30 1px solid;
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_google.png') 6px 6px no-repeat;
+  }
+  .loginBtn--google:hover,
+  .loginBtn--google:focus {
+    background: #E74B37;
+  }
+
+

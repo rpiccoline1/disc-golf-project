@@ -1,0 +1,11 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  
+  {{#if users}}
+    {{> userLoggedIn}}
+  {{/if}}
+
+  {{#unless users}}
+    {{> userLoggedOut}}
+  {{/unless}}
+</nav>
